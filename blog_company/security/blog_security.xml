@@ -1,21 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
 
 <odoo>
-    <!-- Regla para blogs: solo compañía del usuario -->
+
 
     <record id="blog_blog_company_rule" model="ir.rule">
-        <field name="name">Blog by company</field>
+        <field name="name">Blogs by company</field>
         <field name="model_id" ref="website_blog.model_blog_blog"/>
-        <field name="domain_force">[('company_id', 'in', user.company_ids.ids)]</field>
-        <field name="groups" eval="[]"/> <!-- aplica a todos -->
+        <field name="domain_force">[('company_id','child_of',[user.company_id.id])]</field>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
     </record>
 
-    <!-- Regla para posts: solo compañía del usuario -->
     <record id="blog_post_company_rule" model="ir.rule">
-        <field name="name">Blog Post by company</field>
+        <field name="name">Blog Posts by company</field>
         <field name="model_id" ref="website_blog.model_blog_post"/>
-        <field name="domain_force">[('company_id', 'in', user.company_ids.ids)]</field>
-        <field name="groups" eval="[]"/> <!-- aplica a todos -->
+        <field name="domain_force">[('company_id','child_of',[user.company_id.id])]</field>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
     </record>
 
-    
+
 </odoo>

@@ -14,7 +14,7 @@ Users can only view and manage blogs and posts of their company and its child co
 
     # Category
     'category': 'Website',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.0.1',
 
     # Modules required for this module to work
     'depends': ['website_blog'],
