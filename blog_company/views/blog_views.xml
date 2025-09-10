@@ -1,0 +1,46 @@
+<!-- <odoo>
+
+    <record id="to1_demo_purchase_order_form_inherit" model="ir.ui.view">
+        <field name="name">purchase.order.form.to1.inherit</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <field name='price_unit' position="after">
+                <field name="secondary_unit"/>
+                <field name="calculation_factor"/>
+            </field>
+        </field>
+        
+    </record>
+
+
+</odoo> -->
+
+<odoo>
+    <!-- Blog form: añadir campo compañía -->
+
+    <record id="view_blog_form_inherit_company" model="ir.ui.view">
+        <field name="name">blog.blog.form.inherit.company</field>
+        <field name="model">blog.blog</field>
+        <field name="inherit_id" ref="website_blog.blog_blog_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="company_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Blog Post form: mostrar compañía (solo lectura, heredada del blog) -->
+    <record id="view_blog_post_form_inherit_company" model="ir.ui.view">
+        <field name="name">blog.post.form.inherit.company</field>
+        <field name="model">blog.post</field>
+        <field name="inherit_id" ref="website_blog.blog_post_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='blog_id']" position="after">
+                <field name="company_id" readonly="1"/>
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>
