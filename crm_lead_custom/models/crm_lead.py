@@ -11,7 +11,7 @@ class CrmLead(models.Model):
             ("internet", "Búsqueda en Internet"),
         ],
         string="Source Type",
-        required=False,
+        required=True,
     )
 
     @api.model

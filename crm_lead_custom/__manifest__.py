@@ -23,7 +23,6 @@ Customizes CRM Leads and Website Contact form:
     # Always loaded
     'data': [
         'security/ir.model.access.csv',
-        "views/crm_lead_views.xml",
         "views/website_crm_form.xml",
     ],
 
