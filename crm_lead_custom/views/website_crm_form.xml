@@ -8,6 +8,7 @@
         <xpath expr="//form[@id='contactus_form']//input[@name='name']" position="replace">
             <input type="text" name="name" class="form-control" placeholder="Your name"/>
         </xpath>
+        <xpath expr="//form[@id='contactus_form']//label[./span[@class='s_website_form_label_content' and text()='Name']]/span[@class='s_website_form_mark']" position="replace"/>
         <xpath expr="//form[@id='contactus_form']//div[input[@name='phone']]" position="replace"/>
         <xpath expr="//form[@id='contactus_form']//input[@name='email_from']" position="attributes">
             <attribute name="type">email</attribute>
@@ -42,7 +43,3 @@
 
 
 </odoo>
-
-
-
-

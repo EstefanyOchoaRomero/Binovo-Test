@@ -17,4 +17,3 @@ class SaleOrder(models.Model):
         for order in self:
             zero_lines = order.order_line.filtered(lambda l: l.product_uom_qty <= 0)
             zero_lines.unlink()
-

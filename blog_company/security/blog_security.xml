@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
 <odoo>
 
 
@@ -9,6 +10,7 @@
         <field name="domain_force">[('company_id','child_of',[user.company_id.id])]</field>
         <field name="groups" eval="[(4, ref('base.group_user'))]"/>
     </record>
+
 
     <record id="blog_post_company_rule" model="ir.rule">
         <field name="name">Blog Posts by company</field>

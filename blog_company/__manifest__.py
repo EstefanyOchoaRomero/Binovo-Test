@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 {
     'name': "blog_company",
 
@@ -26,10 +26,6 @@ Users can only view and manage blogs and posts of their company and its child co
         'views/blog_views.xml',    
     ],
 
-    # Only loaded in demonstration mode (optional)
-    'demo': [
-        # 'demo/demo.xml',
-    ],
 
     'installable': True,
     'application': False,

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 {
     'name': "Sale Order: No Zero Quantity",
 
@@ -25,10 +25,6 @@ It also adds a button to delete only the lines with quantity zero from the order
         'views/sale_order_views.xml',    
     ],
 
-    # Only loaded in demonstration mode (optional)
-    'demo': [
-        # 'demo/demo.xml',
-    ],
 
     'installable': True,
     'application': False,

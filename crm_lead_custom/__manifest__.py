@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 {
     'name': "CRM Lead Custom",
 
@@ -26,10 +26,6 @@ Customizes CRM Leads and Website Contact form:
         "views/website_crm_form.xml",
     ],
 
-    # Only loaded in demonstration mode (optional)
-    'demo': [
-        # 'demo/demo.xml',
-    ],
 
     'installable': True,
     'application': False,
