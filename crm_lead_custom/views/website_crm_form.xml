@@ -13,18 +13,25 @@
         <xpath expr="//form[@id='contactus_form']//input[@name='email_from']" position="attributes">
             <attribute name="type">email</attribute>
         </xpath>
-        <xpath expr="//form[@id='contactus_form']/div[contains(@class,'s_website_form_rows')]" position="inside">
-            <div class="mb-3 col-12 s_website_form_field s_website_form_required s_website_form_model_required" data-type="selection" data-name="source_type">
-                <label class="s_website_form_label" for="source_type">
-                    <span class="s_website_form_label_content">How did you find us?</span>
-                    <span class="s_website_form_mark"> *</span>
-                </label>
-                <select id="source_type" name="source_type" class="form-control s_website_form_input" required="1">
-                    <option value="">Select...</option>
-                    <option value="third_party">Terceros</option>
-                    <option value="social_media">Redes Sociales</option>
-                    <option value="internet">Búsqueda en Internet</option>
-                </select>
+        <xpath expr="//form[@id='contactus_form']//div[contains(@class,'s_website_form_submit')]" position="before">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-8">
+                    <div class="mb-3 s_website_form_field s_website_form_required s_website_form_model_required" data-type="selection" data-name="source_type">
+                        <label class="s_website_form_label" for="source_type">
+                            <span class="s_website_form_label_content">How did you find us?</span>
+                            <span class="s_website_form_mark"> *</span>
+                        </label>
+                        <select id="source_type" name="source_type" class="form-control s_website_form_input" required="1">
+                            <option value="">Select...</option>
+                            <option value="third_party">Third Party</option>
+                            <option value="social_media">Social Media</option>
+                            <option value="internet">Internet Search</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="s_website_form_submit"></div>
+                </div>
             </div>
         </xpath>
     </template>
@@ -43,3 +50,4 @@
 
 
 </odoo>
+

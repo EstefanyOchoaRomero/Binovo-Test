@@ -1,6 +1,7 @@
 from odoo import models
 from odoo.exceptions import UserError
 
+
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
