@@ -6,9 +6,9 @@ class CrmLead(models.Model):
 
     source_type = fields.Selection(
         [
-            ("third_party", "Terceros"),
-            ("social_media", "Redes sociales"),
-            ("internet", "Búsqueda en Internet"),
+            ("third_party", "Third Party"),
+            ("social_media", "Social Media"),
+            ("internet", "Internet Search"),
         ],
         string="Source Type",
         required=True,
